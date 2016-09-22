@@ -17,6 +17,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Ejercicio7", "Ejercicio7\Ej
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Spherev2", "Spherev2\Spherev2.vcxproj", "{71F433EF-B708-4F4D-AA7E-65A2DC183077}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoadModel", "LoadModel\LoadModel.vcxproj", "{D917C765-8D11-45FF-995A-3033CF203B6F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -51,6 +53,10 @@ Global
 		{71F433EF-B708-4F4D-AA7E-65A2DC183077}.Debug|Win32.Build.0 = Debug|Win32
 		{71F433EF-B708-4F4D-AA7E-65A2DC183077}.Release|Win32.ActiveCfg = Release|Win32
 		{71F433EF-B708-4F4D-AA7E-65A2DC183077}.Release|Win32.Build.0 = Release|Win32
+		{D917C765-8D11-45FF-995A-3033CF203B6F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D917C765-8D11-45FF-995A-3033CF203B6F}.Debug|Win32.Build.0 = Debug|Win32
+		{D917C765-8D11-45FF-995A-3033CF203B6F}.Release|Win32.ActiveCfg = Release|Win32
+		{D917C765-8D11-45FF-995A-3033CF203B6F}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
