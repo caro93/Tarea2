@@ -1,9 +1,3 @@
-/*
- * Texture.h
- *
- *  Created on: 10/04/2015
- *      Author: rey
- */
 
 #include <string>
 #include <GL/glew.h>

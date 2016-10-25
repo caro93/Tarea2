@@ -30,6 +30,11 @@ AABB getAABB(std::vector<Mesh> meshes) {
 				aabb.max.z = meshes[i].vertices[j].Position.z;
 		}
 	}
+	aabb.center = glm::vec3((aabb.min.x + aabb.max.x) / 2.0f,
+		(aabb.min.y + aabb.max.y) / 2.0f, (aabb.min.z + aabb.max.z) / 2.0f);
+	aabb.dist = sqrt(
+		pow(aabb.min.x - aabb.max.x, 2) + pow(aabb.min.y - aabb.max.y, 2)
+		+ pow(aabb.min.z - aabb.max.z, 2));
 	return aabb;
 }
 
@@ -83,6 +88,48 @@ bool testSphereSphereIntersection(SBB sbb1, SBB sbb2) {
 	if (d <= (sbb1.ratio + sbb2.ratio))
 		return true;
 	return false;
+}
+
+bool testCajaCajaIntersection(AABB aabb1, AABB aabb2) {
+	if (aabb1.min.x <= aabb2.max.x && aabb1.max.x >= aabb2.min.x &&
+		aabb1.min.y <= aabb2.max.y && aabb1.max.y >= aabb2.min.y &&
+		aabb1.min.z <= aabb2.max.z && aabb1.max.z >= aabb2.min.z){
+		return true;
+	}
+	else
+		return false;
+}
+
+bool testCajaSphereIntersection(AABB aabb1, SBB sbb1) {
+	bool centersphere;
+	float S, d;
+	//Primero verificamos que el  centro de la esfera esté contenido en la caja
+	if (sbb1.center.x >= aabb1.min.x && sbb1.center.x <= aabb1.max.x &&
+		sbb1.center.y >= aabb1.min.y && sbb1.center.y <= aabb1.max.y &&
+		sbb1.center.z >= aabb1.min.z && sbb1.center.z <= aabb1.max.z){
+		centersphere = true;
+	}
+	else
+		centersphere = false;
+	if (centersphere == false){
+		for (int i = 0; i < 3; i++){
+			if (sbb1.center[i] < aabb1.min[i]){
+				S = sbb1.center[i] - aabb1.min[i];
+				d += S*S;
+			}
+			else if (sbb1.center[i]>aabb1.max[i]){
+				S = sbb1.center[i] - aabb1.max[i];
+				d += S*S;
+			}
+		}
+	}
+
+	if (d < (sbb1.ratio*sbb1.ratio)){
+		return true;
+	}
+	return false;
+
+
 }
 
 #endif /* HEADERS_COLLISION_H_ */

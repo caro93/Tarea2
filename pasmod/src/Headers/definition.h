@@ -72,6 +72,8 @@ typedef struct _VertexLightTexture {
 typedef struct _AABB{
 	glm::vec3 min;
 	glm::vec3 max;
+	glm::vec3 center;
+	float dist;
 }AABB;
 
 typedef struct _SBB{
@@ -87,7 +89,7 @@ enum MODEL_MODE {
 	VERTEX_LIGHT_TEXTURE
 };
 
-std::vector<Texture> textures;
-Texture * texture1;
+//std::vector<Texture> textures;
+//Texture * texture1;
 
 #endif /* HEADERS_DEFINITION_H_ */

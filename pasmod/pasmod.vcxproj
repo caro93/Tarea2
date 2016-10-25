@@ -11,6 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Caja.cpp" />
     <ClCompile Include="src\GLApplication.cpp" />
     <ClCompile Include="src\GLFWManager.cpp" />
     <ClCompile Include="src\InputManager.cpp" />
@@ -24,6 +25,7 @@
     <ClCompile Include="src\TimeManager.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Headers\Caja.h" />
     <ClInclude Include="src\Headers\CameraFPS.h" />
     <ClInclude Include="src\Headers\Colision.h" />
     <ClInclude Include="src\Headers\definition.h" />

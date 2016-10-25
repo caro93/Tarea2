@@ -8,7 +8,7 @@
 
 #include "definition.h"
 #include "Shader.h"
-#include "Texture.h"
+//#include "Texture.h"
 
 class Plano {
 public:

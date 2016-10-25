@@ -19,6 +19,7 @@
 #include "CameraFPS.h"
 #include "TimeManager.h"
 #include "Model.h"
+#include "Caja.h"
 
 class GLApplication {
 public:

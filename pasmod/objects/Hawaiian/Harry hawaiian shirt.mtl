@@ -1,0 +1,46 @@
+# Blender3D MTL File: 
+# Material Count: 4
+newmtl Tex_0151_0_dds_Te.001_Harry_hawaiian_sh
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.123313 0.123313 0.123313
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 0.000000
+illum 2
+map_Kd Harry hawaiian shirt head.dds
+
+
+newmtl Tex_0151_0_dds_Te.002_Harry_hawaiian_sh
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.154141 0.154141 0.154141
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 0.000000
+illum 2
+map_Kd Harry hawaiian shirt head.dds
+
+
+newmtl Tex_0163_0_dds_Te_Tex_Harry_hawaiian_shirt_
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.154141 0.154141 0.154141
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 0.000000
+illum 2
+map_Kd Harry hawaiian shirt body.dds
+
+
+newmtl Tex_0168_0_dds_Te_Tex_Harry_hawaiian_sh.001
+Ns 0.000000
+Ka 0.000000 0.000000 0.000000
+Kd 0.154141 0.154141 0.154141
+Ks 0.000000 0.000000 0.000000
+Ni 1.500000
+d 0.000000
+illum 2
+map_Kd Harry hawaiian shirt hair.dds
+
+

@@ -1,7 +1,8 @@
 #include <GL/glew.h>
 
-#include "Headers/Plano.h"
+
 #include "Headers/GLApplication.h"
+
 
 
 Plano::Plano():
@@ -28,10 +29,10 @@ Plano::~Plano() {
 void Plano::init() {
 	vertices.resize(4);
 	indices.resize(6); 
-	vertices[0].pos = glm::vec3(0.5f, 0.5f, 0.0f);
-	vertices[1].pos = glm::vec3(-0.5f, 0.5f, 0.0f);
-	vertices[2].pos = glm::vec3(-0.5f, -0.5f, 0.0f);
-	vertices[3].pos = glm::vec3(0.5f, -0.5f, 0.0f);
+	vertices[0].pos = glm::vec3(0.5f, 0.0f, -0.5f);
+	vertices[1].pos = glm::vec3(-0.5f, 0.0f, -0.5f);
+	vertices[2].pos = glm::vec3(-0.5f, 0.0f, 0.5f);
+	vertices[3].pos = glm::vec3(0.5f, 0.0f, 0.5f);
 
 	vertices[0].color = glm::vec3(1.0f, 1.0f, 1.0f);
 	vertices[1].color = glm::vec3(1.0f, 1.0f, 1.0f);
